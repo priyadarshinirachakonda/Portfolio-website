@@ -144,4 +144,49 @@ footer {
 /* Light Section */
 .light {
     background-color: #fff;
+
+}
+
+/* General nav styles */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Hamburger icon */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
 }
